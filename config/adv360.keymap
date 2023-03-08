@@ -7,31 +7,9 @@
 
 
 / {
-    led_indicators {
-        compatible = "pwm-leds";
-        label = "LED indicators";
-        led_capslock: led_capslock {
-            pwms = <&pwm0 33>;
-            label = "Caps lock LED";
-        };
-        led_numlock: led_numlock {
-            pwms = <&pwm0 35>;
-            label = "Num lock LED";
-        };
-    };
-
     behaviors {
         #include "macros.dtsi"
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
