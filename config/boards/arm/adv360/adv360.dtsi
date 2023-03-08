@@ -22,9 +22,6 @@
 		zmk,underglow = &led_strip;
 		zmk,backlight = &backlight;
 		zmk,matrix_transform = &default_transform;
-		/* Update for 3.2 */
-		zmk,led-capslock = &led_capslock;
-		zmk,led-numlock = &led_numlock;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -169,19 +166,5 @@
 		chain-length = <3>; /* number of LEDs */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
-
-		/* Update for 3.2 */
-		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
-};
-
-
-/* Update for 3.2 */
-
-&pwm0 {
-	status = "okay";
-	ch0-pin = <33>;
-	/* ch0-inverted; */
-	ch1-pin = <35>;
-	/* ch1-inverted; */
 };
