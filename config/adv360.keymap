@@ -33,9 +33,9 @@
                 <&mo>,
                 <&kp>;
         };
-        DotLPar: DotLPar {
+        dot_lpar: dot_lpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "DotLPar";
+            label = "dot_lpar";
             #binding-cells = <0>;
             bindings =
                 <&kp DOT>,
@@ -43,13 +43,23 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        CommaRPar: CommaRPar {
+        comma_rpar: comma_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "CommaRPar";
+            label = "comma_rpar";
             #binding-cells = <0>;
             bindings =
                 <&kp COMMA>,
                 <&kp RIGHT_PARENTHESIS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        under_minus: under_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "under_minus";
+            #binding-cells = <0>;
+            bindings =
+                <&kp UNDERSCORE>,
+                <&kp MINUS>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -63,7 +73,7 @@
         //     global-quick-tap;
         //     bindings =
         //         <&mo>,
-        //         <&CommaRPar>;
+        //         <&comma_rpar>;
         // };
         gqd: global-quick-tap-dot {
             compatible = "zmk,behavior-hold-tap";
@@ -75,7 +85,7 @@
             global-quick-tap;
             bindings =
                 <&mo>,
-                <&DotLPar>;
+                <&dot_lpar>;
         };
     };
 
@@ -94,9 +104,9 @@
         HandsDownNeuTsSwe {
             bindings = <
      &kp GRAVE           &kp N1           &kp N2             &kp N3               &kp N4        &kp N5      &to 4      &mo 5        &kp N6       &kp N7     &kp N8            &kp N9             &kp N0     &kp MINUS
-       &kp TAB            &kp W            &kp F              &kp M                &kp P         &kp V      &to 1      &to 0     &kp MINUS        &kp U      &gql 5 O             &kp Y              &kp K         &kp Z
+       &kp TAB            &kp W            &kp F              &kp M                &kp P         &kp V      &to 1      &to 0     &under_minus        &kp U      &gql 5 O             &kp Y              &kp K         &kp Z
  &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T         &kp G      &to 2  &lt 4 TAB  &sk LEFT_ALT                              &kp LEFT_GUI          &lt 3 DEL         &to 3         &kp SLASH  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E   &gqt LEFT_ALT I  &gqt LEFT_GUI H            &kp J
-&kp LEFT_SHIFT            &kp X            &kp C              &kp L                &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI             &CommaRPar         &gqd 4 COMMA  &kp SINGLE_QUOTE            &kp Q  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT            &kp X            &kp C              &kp L                &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI             &comma_rpar         &gqd 4 COMMA  &kp SINGLE_QUOTE            &kp Q  &kp RIGHT_SHIFT
          &to 2       &caps_word       &kp DELETE   &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &key_repeat  &lt 2 ESC    &kp END     &kp PG_DN  &lt 3 ENTER  &kp SPACE  &kp  RIGHT_BRACKET  &kp LEFT_BRACKET  &kp LEFT_GUI  &kp LEFT_CONTROL                &to 2
             >;
         };
