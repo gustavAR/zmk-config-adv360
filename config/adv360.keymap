@@ -148,9 +148,9 @@
         keypad {
             bindings = <
            &kp EQUAL            &kp N1        &kp N2        &kp N3          &kp N4         &kp N5     &trans             &mo 5        &kp N6   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp MINUS
-             &kp TAB             &kp Q         &kp W         &kp E           &kp R          &kp T      &to 1             &to 0         &kp Y       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
-&mt LEFT_CONTROL ESC             &kp A         &kp S         &kp D           &kp F          &kp G      &to 2  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 3     &kp H  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
-      &kp LEFT_SHIFT             &kp Z         &kp X         &kp C           &kp V          &kp B      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none     &kp N  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
+             &kp TAB             &kp F7         &kp F8         &kp F9           &kp F10          &kp T      &to 1             &to 0         &kp Y       &kp N7        &kp N8         &kp N9      &kp KP_MINUS    &kp BSLH
+&mt LEFT_CONTROL ESC             &kp F4         &kp F5         &kp F6           &kp F11          &kp G      &to 2  &sk LEFT_CONTROL  &sk LEFT_ALT                              &kp LEFT_GUI  &sk LEFT_CONTROL       &to 3     &kp H  &kp N4  &kp N5  &kp N6   &kp KP_PLUS    &kp SQT
+      &kp LEFT_SHIFT             &kp F1         &kp F2         &kp F3           &kp F12         &kp B      &none             &none      &kp HOME        &none         &none      &kp PG_UP             &none       &none     &kp N  &kp N1  &kp N2  &kp N3  &kp KP_ENTER  &kp RSHFT
                &to 1  &sk LEFT_CONTROL  &kp LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &kp BACKSPACE  &lt 2 ESC            &trans        &trans  &lt 3 ENTER        &kp N0         &kp UP          &kp DOWN  &kp KP_DOT  &kp RBKT   &mo 2
             >;
         };
