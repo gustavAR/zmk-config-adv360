@@ -33,26 +33,6 @@
                 <&mo>,
                 <&kp>;
         };
-        DotLPar: DotLPar {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DotLPar";
-            #binding-cells = <0>;
-            bindings =
-                <&kp DOT>,
-                <&kp LEFT_PARENTHESIS>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        CommaRPar: CommaRPar {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CommaRPar";
-            #binding-cells = <0>;
-            bindings =
-                <&kp COMMA>,
-                <&kp RIGHT_PARENTHESIS>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         gqc: global-quick-tap-comma {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
@@ -76,6 +56,26 @@
             bindings =
                 <&mo>,
                 <&DotLPar>;
+        };
+        DotLPar: DotLPar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DotLPar";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOT>,
+                <&kp LEFT_PARENTHESIS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        CommaRPar: CommaRPar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CommaRPar";
+            #binding-cells = <0>;
+            bindings =
+                <&kp COMMA>,
+                <&kp RIGHT_PARENTHESIS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
