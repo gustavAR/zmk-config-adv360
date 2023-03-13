@@ -21,6 +21,20 @@
                 <&kp>,
                 <&kp>;
         };
+        DotLPar: DotLPar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DotLPar";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp LEFT_PARENTHESIS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        CommaRPar: CommaRPar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CommaRPar";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp RIGHT_PARENTHESIS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -41,7 +55,7 @@
      &kp GRAVE               &kp N1           &kp N2            &kp N3             &kp N4        &kp N5      &to 4      &mo 5        &kp N6       &kp N7     &kp N8            &kp N9             &kp N0     &kp MINUS
        &kp TAB                &kp W            &kp F             &kp M              &kp P         &kp V      &to 1      &to 0     &kp MINUS        &kp U      &kp O             &kp Y              &kp K         &kp Z
  &kp BACKSPACE  &gqt LEFT_CONTROL R  &gqt LEFT_GUI S   &gqt LEFT_ALT N  &gqt LEFT_SHIFT T         &kp G      &to 2  &lt 4 TAB  &sk LEFT_ALT                              &kp LEFT_GUI          &lt 3 DEL         &to 3         &kp SLASH  &gqt LEFT_SHIFT A  &gqt LEFT_ALT E   &gqt LEFT_GUI I  &gqt LEFT_CONTROL H            &kp J
-&kp LEFT_SHIFT                &kp X            &kp C             &kp L              &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI            &kp DOT        &kp COMMA  &kp SINGLE_QUOTE                &kp Q  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT                &kp X            &kp C             &kp L              &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI            &DotLPar        &CommaRPar  &kp SINGLE_QUOTE                &kp Q  &kp RIGHT_SHIFT
          &to 2     &sk LEFT_CONTROL     &kp LEFT_GUI  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp C_REPEAT  &lt 2 ESC    &kp END     &kp PG_DN  &lt 3 ENTER  &kp SPACE  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp LEFT_GUI  &sk LEFT_CONTROL              &to 2
             >;
         };
