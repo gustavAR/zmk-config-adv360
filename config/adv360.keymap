@@ -33,30 +33,6 @@
                 <&mo>,
                 <&kp>;
         };
-        gqc: global-quick-tap-comma {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP_COMMA";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <200>;
-            global-quick-tap;
-            bindings =
-                <&mo>,
-                <&CommaRPar>;
-        };
-        gqd: global-quick-tap-dot {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP_DOT";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <200>;
-            global-quick-tap;
-            bindings =
-                <&mo>,
-                <&DotLPar>;
-        };
         DotLPar: DotLPar {
             compatible = "zmk,behavior-mod-morph";
             label = "DotLPar";
@@ -79,7 +55,7 @@
         };
         gqc: global-quick-tap-comma {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
+            label = "GLOBAL_QUICK_TAP_COMMA";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
@@ -91,7 +67,7 @@
         };
         gqd: global-quick-tap-dot {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
+            label = "GLOBAL_QUICK_TAP_DOT";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
