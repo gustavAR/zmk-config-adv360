@@ -23,7 +23,7 @@
         };
         gql: global-quick-tap-layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
+            label = "GLOBAL_QUICK_TAP_LAYER";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
