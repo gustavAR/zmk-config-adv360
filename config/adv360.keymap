@@ -124,9 +124,9 @@
         Symbols {
             bindings = <
 &trans         &trans     &trans        &trans     &trans         &trans     &trans     &trans  &trans            &trans             &trans    &trans       &trans  &trans
-&trans     &kp DOLLAR  &kp CARET  &kp ASTERISK  &kp GRAVE         &trans     &trans     &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPS  &kp PERCENT  &trans
-&trans       &kp PIPE  &kp MINUS      &kp PLUS  &kp EQUAL         &trans     &trans  &lt 4 TAB  &trans                                         &trans    &lt 3 DEL  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER        &kp AT  &trans
-&trans  &kp BACKSLASH  &kp SLASH      &kp HASH  &kp TILDE         &trans     &trans     &trans  &trans            &trans             &trans    &trans       &trans  &trans  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp EXCL  &kp QUESTION  &trans
+&trans     &kp DOLLAR  &kp CARET  &kp ASTERISK  &kp GRAVE         &trans     &trans     &trans  &trans  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp AMPS  &kp PERCENT  &trans
+&trans       &kp PIPE  &kp MINUS      &kp PLUS  &kp EQUAL         &trans     &trans  &lt 4 TAB  &trans                                         &trans    &lt 3 DEL  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp UNDER        &kp AT  &trans
+&trans  &kp BACKSLASH  &kp SLASH      &kp HASH  &kp TILDE         &trans     &trans     &trans  &trans            &trans             &trans    &trans       &trans  &trans  &trans        &kp RIGHT_BRACE        &kp LEFT_BRACE   &kp EXCL  &kp QUESTION  &trans
 &trans         &trans     &trans        &trans     &trans  &kp BACKSPACE  &lt 2 ESC     &trans  &trans       &lt 3 ENTER          &kp SPACE    &trans       &trans  &trans  &trans                &trans
             >;
         };
