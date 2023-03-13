@@ -25,14 +25,20 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DotLPar";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp LEFT_PARENTHESIS>;
+            bindings =
+                <&kp DOT>,
+                <&kp LEFT_PARENTHESIS>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         CommaRPar: CommaRPar {
             compatible = "zmk,behavior-mod-morph";
             label = "CommaRPar";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RIGHT_PARENTHESIS>;
+            bindings =
+                <&kp COMMA>,
+                <&kp RIGHT_PARENTHESIS>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -46,7 +52,7 @@
        &kp TAB                &kp Q            &kp W            &kp E              &kp R         &kp T      &to 1      &to 0         &kp Y         &kp U         &kp I            &kp O         &kp P  &kp LEFT_BRACKET
  &kp BACKSPACE  &gqt LEFT_CONTROL A  &gqt LEFT_GUI S  &gqt LEFT_ALT D  &gqt LEFT_SHIFT F         &kp G      &to 2  &lt 4 TAB  &sk LEFT_ALT                                 &kp LEFT_GUI     &lt 3 DEL             &to 3             &kp H  &gqt LEFT_SHIFT J  &gqt LEFT_ALT K  &gqt LEFT_GUI L  &gqt LEFT_CONTROL SEMI  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT                &kp Z            &kp X            &kp C              &kp V         &kp B      &none      &none         &mo 4         &none         &none        &kp PG_UP         &none             &none             &kp N              &kp M        &kp COMMA          &kp DOT               &kp SLASH   &sk RIGHT_SHIFT
-         &to 2     &sk LEFT_CONTROL     &kp LEFT_GUI     &sk LEFT_ALT     &sk LEFT_SHIFT  &kp C_REPEAT  &lt 2 ESC    &kp END     &kp PG_DN   &lt 3 ENTER     &kp SPACE  &sk RIGHT_SHIFT  &sk LEFT_ALT      &kp LEFT_GUI  &sk LEFT_CONTROL              &to 2
+         &to 2           &caps_word       &kp DELETE     &sk LEFT_ALT     &sk LEFT_SHIFT  &kp C_REPEAT  &lt 2 ESC    &kp END     &kp PG_DN   &lt 3 ENTER     &kp SPACE  &sk RIGHT_SHIFT  &sk LEFT_ALT      &kp LEFT_GUI  &sk LEFT_CONTROL              &to 2
             >;
         };
 
@@ -55,8 +61,8 @@
      &kp GRAVE               &kp N1           &kp N2            &kp N3             &kp N4        &kp N5      &to 4      &mo 5        &kp N6       &kp N7     &kp N8            &kp N9             &kp N0     &kp MINUS
        &kp TAB                &kp W            &kp F             &kp M              &kp P         &kp V      &to 1      &to 0     &kp MINUS        &kp U      &kp O             &kp Y              &kp K         &kp Z
  &kp BACKSPACE  &gqt LEFT_CONTROL R  &gqt LEFT_GUI S   &gqt LEFT_ALT N  &gqt LEFT_SHIFT T         &kp G      &to 2  &lt 4 TAB  &sk LEFT_ALT                              &kp LEFT_GUI          &lt 3 DEL         &to 3         &kp SLASH  &gqt LEFT_SHIFT A  &gqt LEFT_ALT E   &gqt LEFT_GUI I  &gqt LEFT_CONTROL H            &kp J
-&kp LEFT_SHIFT                &kp X            &kp C             &kp L              &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI            &DotLPar        &CommaRPar  &kp SINGLE_QUOTE                &kp Q  &kp RIGHT_SHIFT
-         &to 2     &sk LEFT_CONTROL     &kp LEFT_GUI  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp C_REPEAT  &lt 2 ESC    &kp END     &kp PG_DN  &lt 3 ENTER  &kp SPACE  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp LEFT_GUI  &sk LEFT_CONTROL              &to 2
+&kp LEFT_SHIFT                &kp X            &kp C             &kp L              &kp D         &kp B      &none      &none         &mo 4        &none      &none         &kp PG_UP              &none         &none          &kp SEMI           &DotLPar       &CommaRPar  &kp SINGLE_QUOTE                &kp Q  &kp RIGHT_SHIFT
+         &to 2           &caps_word       &kp DELETE  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp C_REPEAT  &lt 2 ESC    &kp END     &kp PG_DN  &lt 3 ENTER  &kp SPACE  &sk LEFT_BRACKET  &sk RIGHT_BRACKET  &kp LEFT_GUI  &sk LEFT_CONTROL              &to 2
             >;
         };
 
@@ -72,11 +78,11 @@
 
         Symbols {
             bindings = <
-&trans         &trans     &trans        &trans            &trans         &trans     &trans     &trans  &trans                &trans                 &trans    &trans       &trans  &trans
-&trans     &kp DOLLAR  &kp CARET  &kp ASTERISK         &kp GRAVE         &trans     &trans     &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS  &kp PERCENT  &trans
-&trans       &kp PIPE  &kp MINUS      &kp PLUS         &kp EQUAL         &trans     &trans  &lt 4 TAB  &trans                                                 &trans    &lt 3 DEL  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER        &kp AT  &trans
-&trans  &kp BACKSLASH  &kp SLASH      &kp HASH  &kp SINGLE_QUOTE         &trans     &trans     &trans  &trans                &trans                 &trans    &trans       &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp EXCL  &kp QUESTION  &trans
-&trans         &trans     &trans        &trans            &trans  &kp BACKSPACE  &lt 2 ESC     &trans  &trans           &lt 3 ENTER              &kp SPACE    &trans       &trans  &trans  &trans            &trans
+&trans         &trans     &trans        &trans     &trans         &trans     &trans     &trans  &trans            &trans             &trans    &trans       &trans  &trans
+&trans     &kp DOLLAR  &kp CARET  &kp ASTERISK  &kp GRAVE         &trans     &trans     &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPS  &kp PERCENT  &trans
+&trans       &kp PIPE  &kp MINUS      &kp PLUS  &kp EQUAL         &trans     &trans  &lt 4 TAB  &trans                                         &trans    &lt 3 DEL  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER        &kp AT  &trans
+&trans  &kp BACKSLASH  &kp SLASH      &kp HASH  &kp TILDE         &trans     &trans     &trans  &trans            &trans             &trans    &trans       &trans  &trans  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp EXCL  &kp QUESTION  &trans
+&trans         &trans     &trans        &trans     &trans  &kp BACKSPACE  &lt 2 ESC     &trans  &trans       &lt 3 ENTER          &kp SPACE    &trans       &trans  &trans  &trans                &trans
             >;
         };
 
