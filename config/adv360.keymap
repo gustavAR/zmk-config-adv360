@@ -112,11 +112,11 @@
 
         HandsDownNeuTsSwe {
             bindings = <
-     &kp GRAVE           &kp N1           &kp N2             &kp N3               &kp N4       &kp N5      &to 4    &mo 5            &kp N6       &kp N7               &kp N8             &kp N9     &kp N0         &kp MINUS
-       &kp TAB            &kp W            &kp F           &gql 4 M                &kp P        &kp V      &to 1    &to 0  &kp LEFT_BRACKET     &kp SEMI  &gql 4 SINGLE_QUOTE              &kp J      &kp Q             &kp Z
- &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T        &kp G      &to 2    &mo 4             &mo 3                                                &mo 2      &mo 3             &to 3     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
-&kp LEFT_SHIFT            &kp X            &kp C           &gql 3 L                &kp D        &kp B      &none    &none             &mo 3        &none                &none          &kp PG_UP      &none             &none  &under_minus                &kp U           &gql 3 O            &kp Y            &kp K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word          &kp GRAVE          &kp LA(TAB)  &key_repeat  &lt 2 ESC  &kp END         &kp PG_DN  &lt 3 ENTER            &kp SPACE  &kp LC(BACKSPACE)  &lpar_bsh  &kp LEFT_CONTROL  &kp LEFT_GUI           &kp DELETE
+     &kp GRAVE           &kp N1           &kp N2             &kp N3               &kp N4       &kp N5      &to 4  &mo 5            &kp N6       &kp N7               &kp N8             &kp N9     &kp N0         &kp MINUS
+       &kp TAB            &kp W            &kp F           &gql 4 M                &kp P        &kp V      &to 1  &to 0  &kp LEFT_BRACKET     &kp SEMI  &gql 4 SINGLE_QUOTE              &kp J      &kp Q             &kp Z
+ &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T        &kp G      &to 2  &mo 4             &mo 3                                                &mo 2      &mo 3             &to 3     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
+&kp LEFT_SHIFT            &kp X            &kp C           &gql 3 L                &kp D        &kp B      &none  &none             &mo 3        &none                &none          &kp PG_UP      &none             &none  &under_minus                &kp U           &gql 3 O            &kp Y            &kp K  &kp RIGHT_SHIFT
+    &caps_word     &kp LEFT_GUI       &caps_word          &kp GRAVE          &kp LA(TAB)  &key_repeat  &lt 2 ESC  &mo 5         &kp PG_DN  &lt 3 ENTER            &kp SPACE  &kp LC(BACKSPACE)  &lpar_bsh  &kp LEFT_CONTROL  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
