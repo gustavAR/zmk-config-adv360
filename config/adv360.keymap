@@ -122,11 +122,11 @@
 
         Symbols {
             bindings = <
-&trans           &trans         &trans            &trans     &trans         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
-&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE       &kp PIPE  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
-&trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL  &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
-&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
-&trans           &trans         &trans            &trans     &trans          &mo 4  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans             &trans
+&trans           &trans         &trans            &trans     &trans            &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
+&trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE          &kp PIPE  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
+&trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL     &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
+&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE  &kp SINGLE_QUOTE  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans           &trans         &trans            &trans     &trans             &mo 4  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
 
