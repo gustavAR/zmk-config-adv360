@@ -102,11 +102,11 @@
 
         HandsDownMod {
             bindings = <
-        &tog 1           &kp N1           &kp N2             &kp N3               &kp N4  &kp N5  &to 4  &mo 5     &kp N6     &kp N7            &kp N8             &kp N9       &kp N0  &kp MINUS
-       &kp TAB            &kp W            &kp F              &kp M                &kp P   &kp V  &to 0  &to 6  &kp SLASH   &kp SEMI  &kp SINGLE_QUOTE              &kp J        &kp Q      &kp Z
- &kp BACKSPACE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T   &kp G  &to 3  &mo 4   &kp RALT                                        &kp RALT   &kp ESCAPE      &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
-&kp LEFT_SHIFT            &kp X            &kp C              &kp L                &kp D   &kp B  &none  &none      &mo 2      &none             &none          &kp PG_UP        &none      &none  &under_minus                &kp U              &kp O            &kp Y            &kp K  &kp RIGHT_SHIFT
-    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp LA(TAB)   &mo 3  &mo 2  &mo 5   &kp RALT  &kp ENTER         &kp SPACE  &kp RC(BACKSPACE)  &key_repeat  &kp ENTER  &kp LEFT_GUI           &kp DELETE
+        &tog 1           &kp N1           &kp N2             &kp N3               &kp N4  &kp N5  &to 4  &mo 5     &kp N6     &kp N7            &kp N8             &kp N9         &kp N0  &kp MINUS
+       &kp TAB            &kp W            &kp F              &kp M                &kp P   &kp V  &to 0  &to 6  &kp SLASH   &kp SEMI  &kp SINGLE_QUOTE              &kp J          &kp Q      &kp Z
+    &kp ESCAPE  &gqt LEFT_GUI R  &gqt LEFT_ALT S  &gqt LEFT_SHIFT N  &gqt LEFT_CONTROL T   &kp G  &to 3  &mo 4   &kp RALT                                        &kp RALT  &kp BACKSPACE      &to 2     &dot_qmrk  &gqt LEFT_CONTROL A  &gqt LEFT_SHIFT E  &gqt LEFT_ALT I  &gqt LEFT_GUI H      &comma_excl
+&kp LEFT_SHIFT            &kp X            &kp C              &kp L                &kp D   &kp B  &none  &none      &mo 2      &none             &none          &kp PG_UP          &none      &none  &under_minus                &kp U              &kp O            &kp Y            &kp K  &kp RIGHT_SHIFT
+    &caps_word     &kp LEFT_GUI       &caps_word            &kp TAB          &kp LA(TAB)   &mo 3  &mo 2  &mo 5   &kp RALT  &kp ENTER         &kp SPACE  &kp RC(BACKSPACE)    &key_repeat  &kp ENTER  &kp LEFT_GUI           &kp DELETE
             >;
         };
 
@@ -124,19 +124,19 @@
             bindings = <
 &trans           &trans         &trans            &trans     &trans         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans
 &trans       &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE       &kp PIPE  &trans  &trans  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &trans
-&trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL  &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp AT  &trans
-&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp COLON  &trans
-&trans           &trans         &trans            &trans     &trans         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans             &trans
+&trans  &kp EXCLAMATION      &kp MINUS          &kp PLUS  &kp EQUAL  &kp BACKSLASH  &trans  &trans  &trans                                              &trans       &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON  &trans
+&trans        &kp CARET      &kp SLASH          &kp HASH  &kp TILDE         &trans  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans       &kp ASTERISK        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp AT  &trans
+&trans           &trans         &trans            &trans     &trans          &mo 4  &trans  &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans             &trans
             >;
         };
 
         Nav {
             bindings = <
-     &kp F1        &kp C_BRI_DN    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE      &to 4      &mo 5  &kp F7       &kp F8     &kp F9          &kp F10        &kp F11       &kp F12
-&kp C_POWER           &kp LC(Q)           &kp LC(W)          &kp LC(E)        &kp LC(R)    &kp LC(T)      &to 0      &to 6  &trans      &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
-&kp C_SLEEP  &mt LEFT_GUI LC(A)      &mt LALT LC(S)   &mt LSHIFT LC(D)  &mt LCTRL LC(F)    &kp LC(G)      &to 3  &lt 4 TAB  &trans                                   &trans      &lt 2 DEL         &to 2          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
-     &trans           &kp LC(Z)           &kp LC(X)          &kp LC(C)        &kp LC(V)    &kp LC(B)     &trans     &trans  &trans       &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
-      &to 0        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN  &key_repeat  &lt 3 ESC     &trans  &trans  &lt 2 ENTER  &kp SPACE  &sk RIGHT_SHIFT   &sk LEFT_ALT  &kp LEFT_GUI  &sk LEFT_CONTROL     &to 0
+     &kp F1        &kp C_BRI_DN    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE   &to 4   &mo 5  &kp F7   &kp F8     &kp F9          &kp F10        &kp F11       &kp F12
+&kp C_POWER           &kp LC(Q)           &kp LC(W)          &kp LC(E)        &kp LC(R)   &kp LC(T)   &to 0   &to 6  &trans  &kp TAB  &kp GRAVE        &kp LC(Z)  &kp LC(LS(Z))        &trans
+&kp C_SLEEP  &mt LEFT_GUI LC(A)      &mt LALT LC(S)   &mt LSHIFT LC(D)  &mt LCTRL LC(F)   &kp LC(G)   &to 3  &trans  &trans                               &trans         &trans         &to 2          &kp LEFT  &kp DOWN         &kp UP    &kp RIGHT   &trans  &trans
+     &trans           &kp LC(Z)           &kp LC(X)          &kp LC(C)        &kp LC(V)   &kp LC(B)  &trans  &trans  &trans   &trans     &trans           &trans         &trans        &trans            &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
+      &to 0        &kp C_REWIND  &kp C_FAST_FORWARD         &kp C_PREV  &kp PRINTSCREEN      &trans   &mo 4  &trans  &trans   &trans     &trans  &sk RIGHT_SHIFT   &sk LEFT_ALT  &kp LEFT_GUI  &sk LEFT_CONTROL     &to 0
             >;
         };
 
